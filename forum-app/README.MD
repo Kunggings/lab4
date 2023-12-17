@@ -1,0 +1,1 @@
+Grant ALL PRIVILEGES ON forum-app TO 'appuser'@'localhost';

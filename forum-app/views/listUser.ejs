@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search <%=forumName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Here are all the users:</h1>
+	<ui>
+		<% for(let i =0; i< availableUsers.length; i++){ %>
+			<li>	UserID: <%=  availableUsers[i].userID%>,<br>
+				FirstName: <%= availableUsers[i].firstName%>,<br>
+        LastName:<%= availableUsers[i].lastName%>,<br>
+        Email:<%= availableUsers[i].email%></li>,<br>
+		<%} %>
+	</ui>        
+    </form>
+  </body>
+</html>

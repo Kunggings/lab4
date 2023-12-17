@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search <%=forumName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Here are the posts:</h1>
+	<ui>
+		
+		<%for(let i=0; i< searchKey.length; i++){ %>
+			<li> 
+				PostID:<%=  searchResults[i].postID%>,<br>
+				Text:<%=  searchResults[i].info%>,<br>
+				UserID:<%=  searchResults[i].user_userID%>,<br>
+				TopicID:<%=  searchResults[i].topic_topicID%> </li>,<br>
+		<%} %>
+	</ui>        
+    </form>
+  </body>
+</html>

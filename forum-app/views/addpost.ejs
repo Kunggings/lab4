@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search <%=forumName%></title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Search <%=forumName%></h1>
+    <form action="/postadded" method="post">
+      <p>Add Post</p>
+      Text: <input type="text" name="info" /><br />
+      Topic: <input type="text" name="topic_topicID" /><br />
+      User: <input type="text" name="user_userID" /><br />
+      <!-- Text: <textarea name="text" rows="4" cols="50"></textarea> -->
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
